@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            
+            width:100%;
+            background:url(3.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color:#282A35;
+            /* opacity: 0.8; */
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            color:white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 0px;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            background-color:rgb(135, 206, 235);
+        }
+
+        .logo {
+            display: inline-block;
+            margin-right: 700px;
+            color:#ec9d08;
+            font-size: 25px;
+            font-family: Arial;
+    text-align: left;
+        }
+
+        .logo img {
+            width: 50px; /* adjust the size of the logo */
+            height: auto;
+        }
+        h2{
+            position: absolute;
+            left: 80px;
+            margin-top: 8px;;
+        }
+        .dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-item {
+      padding: 12px;
+      display: block;
+    }
+
+    .dropdown-item:hover {
+      background-color: #555;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 20px;
+      position: relative;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+    }
+       
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <h2>Loopland Amusement Park</h2>
+            <img src="m.png" alt="Logo"> 
+         
+        </div>
+        
+        <ul>
+            
+            
+            <li class="dropdown">
+              <a href="#">Rides</a>
+              <div class="dropdown-content">
+                <a class="dropdown-item" href="familyride.php">Family Rides</a>
+                <a class="dropdown-item" href="thrillride.php">Thrill Rides</a>
+              </div>
+            </li>
+            <li><a href="aboutus.php">About</a></li>
+            <li><a href="book.php">Book Now</a></li>
+            
+            <li><a href="adminpage.php">Admin</a></li>
+
+          </ul>
+    </div>
+    
+
+</body>
+</html>
